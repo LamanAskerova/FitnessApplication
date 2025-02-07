@@ -10,7 +10,6 @@ internal class Program
         fitnessTracker.AddUsers("Henry");
         fitnessTracker.DeleteAccount("Lucy");
         fitnessTracker.PrintInfo();
-      
 
         Console.WriteLine();
 
@@ -21,17 +20,17 @@ internal class Program
         fitProTrack.DeleteAccount("Mike");
         fitProTrack.TrackSteps(15000);
         fitProTrack.PrintInfo();
-       
-
 
         Console.WriteLine();
 
         Activity running = new Running();
-        running.CalculateCalories(15);
+        running.CalculateCalories("Morning ",15);
+        running.SetCurrentActivity();
 
         Console.WriteLine();
 
         Activity cycling = new Cycling();
-        cycling.CalculateCalories(10);
+        cycling.CalculateCalories("Late Night" , 10);
+        cycling.SetCurrentActivity();
     }
 }

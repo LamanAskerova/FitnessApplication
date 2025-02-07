@@ -9,5 +9,7 @@ internal abstract class Activity
     public int CaloriesBurned { get; set; }
     public int Minutes;
 
-    internal abstract void CalculateCalories(int minutes);
+    internal abstract void CalculateCalories(string ActivityName , int duration);
+
+    internal abstract void SetCurrentActivity();
 }
